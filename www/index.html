@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Library</title>
+	
+	<script src="js/jquery.js"></script>
+		<script>
+	$(document).bind("mobileinit", function(){
+		$.mobile.defaultPageTransition= 'none';
+
+	});
+	
+	</script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+	<link href="css/theme.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/photoswipe.css" />
+	
+	<script type="text/javascript" src="js/libs/klass.min.js"></script>
+	<script type="text/javascript" src="js/libs/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script type="text/javascript" src="js/libs/flickr-gallery-ps.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/libs/cordova-2.7.0.js"></script>
+	<script type="text/javascript" src="js/photoswipe.js"></script>
+	
+	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+</head>
+<body>
+<div id="screenMask"></div>
+<div data-role="page" id="libraryPage" class="page-bg"><!-- library Page starts -->
+<div data-role="header" class="header-golden-bg" data-position="fixed"><!-- header starts -->
+	</div><!-- header ends -->
+	
+	<div data-role="content"><!-- content starts -->
+		<div class="ui-body text-center first-page">
+			<img src="images/logo.png" height="140"/>
+			<h3>United Arab Emirates Ministry of Culture, Youth &amp; Community Development</h3>
+		</div>
+		<div align="center">
+			<a href="#libLandingPage" data-role="button" class="cutm-btn-do golden-btn">English</a>
+			<a href="ar/index.html" rel="external" data-role="button" class="cutm-btn-do golden-btn">العربية</a>
+		</div>
+	</div><!-- content ends -->
+</div><!-- library page ends -->
+
+
+<div data-role="page" id="libLandingPage" class="page-bg"><!-- libLandingPage page starts -->
+	
+	<div data-role="content" class="no-pad-content"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+		</div>
+		
+		<div class="ui-grid-a landing-pg-grid">
+			<div class="ui-block-a" align="center"><a href="#aboutPublicLIB"><div class="about-img">&nbsp;</div></a></div>
+			<div class="ui-block-b" align="center"><a href="#searchLIBPage"><div class="catalogue-img">&nbsp;</div></a></div>
+		</div>
+		<div class="ui-grid-a landing-pg-grid">
+			<div class="ui-block-a" align="center" id="myAccount_icon"><a href=""><div class="account-img">&nbsp;</div></a></div>
+			<div class="ui-block-b" align="center"  id="oneSearch_icon"><a href=""><div class="onesearch-img">&nbsp;</div></a></div>
+		</div>
+		<div class="ui-grid-a landing-pg-grid">
+			<div class="ui-block-a" align="center"><a href="#eResourcesPage"><div class="resources-img">&nbsp;</div></a></div>
+			<div class="ui-block-b" align="center"><a href="#eParticipationPage"><div class="participation-img">&nbsp;</div></a></div>
+		</div>
+		<div class="ui-grid-a landing-pg-grid">
+			<div class="ui-block-a" align="center"><a href="#libraryServicesPage"><div class="libary-services-img">&nbsp;</div></a></div>
+			<div class="ui-block-b" align="center"><a href="#listOFLibrariesPage"><div class="libary-locator-img">&nbsp;</div></a></div>
+		</div>
+		<div class="ui-grid-a landing-pg-grid">
+			<div class="ui-block-a" align="center"><a href="#comingSOonPage"><div class="ask-librarian-img">&nbsp;</div></a></div>
+			<div class="ui-block-b" align="center"><a href="#comingSOonPage"><div class="event-cal-img">&nbsp;</div></a></div>
+		</div>
+	</div><!-- content ends -->
+	
+<!--	<div data-role="footer" data-position="fixed" class="log-footer"><!-- footer starts -->
+<!--	</div><!-- footer ends -->
+</div><!-- libLandingPage page ends -->
+
+
+<div data-role="page" id="searchLIBPage" class="page-bg"><!-- searchLIBPage page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#libLandingPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content"><!-- content starts -->
+		<input type="text" id="txtCatalogueSearch" placeholder="enter search keyword">
+		<ul data-role="listview" id="catalogue_search_list" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true">
+			
+		</ul>
+	
+	</div><!-- content ends -->
+	
+<!--	<div data-role="footer" data-position="fixed" class="log-footer"><!-- footer starts -->
+<!--	</div><!-- footer ends -->
+</div><!-- searchLIBPage page ends -->
+
+
+<div data-role="page" id="aboutPublicLIB" class="page-bg"><!-- aboutPublicLIB page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#libLandingPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content"><!-- content starts -->
+		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+			<h4>MCYCD Mission</h4>
+			<p>Supporting and Encouraging Cultural and Societal Movements and Promoting the UAE National Identity through effective coordination with our partners and through distinction in our services and human resources using creative and developed means.</p>
+		</div>
+		
+		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+			<h4>MCYCD Vision</h4>
+			<p>Leadership in Cultural and Societal Development for a Prosperous UAE.</p>
+		</div>
+		
+		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" class="pub-list">
+			<h4>MCYCD Objectives</h4>
+			<ul>
+				<li>First Objective: Supporting cultural activities and elevating the level of UAE cultural awareness.</li>
+				<li>Second Objective: Preserving the Cultural Identity and promoting its components.</li>
+				<li>Third Objective: Upgrading the artistic movement and preserving the intangible UAE heritage.</li>
+				<li>Fourth Objective: Promoting the integration and coordination with both public and private sectors and building effective partnerships.</li>
+				<li>Fifth Objective: Development of the human resources and the institutional performance according to applied international practices.</li>
+			</ul>
+		</div>
+		
+		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" class="pub-list">
+			<h4>Public Libraries Objectives</h4>
+			<ul>
+				<li>To meet the needs of the information resources to the different classes of the community.</li>
+				<li>To support researchers, schools and universities students those are wishing to develop their information skills.</li>
+				<li>To encourage reading attitude to children, young people and adults.</li>
+				<li>To encourage information knowledge skills and high-level reading.</li>
+				<li>To encourage in participating on the social life and mass participation.</li>
+				<li>To motivate to take advantage of the leisure times by spending in libraries and participation in their programs.</li>
+				<li>To provide the modern developed information technology in order to facilitate and access the libraries Collections.</li>
+			</ul>
+		</div>
+		
+		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" class="pub-list">
+			<h4>Our Public Libraries</h4>
+			<ul>
+				<li>Abu Dhabi Public Library.</li>
+				<li>Umm AlQuawain Public Library.</li>
+				<li>Dibba Fujairah Public Library.</li>
+				<li>Delma Public Library.</li>
+				<li>Ras Alkhaimah Public Library.</li>
+				<li>Ajman Public Library.</li>
+				<li>Fujairah Public Library.</li>
+				<li>Madint Zayed Public Library.</li>
+				<li>Massafi Public Library.</li>
+				<li>Masfout Public Library.</li>
+			</ul>
+		</div>
+		
+<!--		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" class="pub-list">
+			<h4>Public Libraries Collections</h4>
+			<p>Collections of Public libraries include variety items of paper and electronic information resources in both languages, Arabic and English in addition to further languages, the libraries department in Culture and Community Activities Department development collections of libraries according to working methodologies taking into account the needs of the community members. The total amount of items of different information resources in libraries as follows:</p>
+			<ul>
+				<li>62000 Titles and nearly to 285000 items in its forms printed and electronic.</li>
+				<li>77 periodical in different specialization.</li>
+				<li>Six Electronic Databases available via the internal website to libraries.</li>
+			</ul>
+		</div>-->
+		
+		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" class="pub-list cutm-btn-do">
+			<h4>Public Libraries Services</h4>
+			<p>The Ministry provides through the public libraries a variety bunch of libraries services to meet the need of community of libraries members as per their different age's classes and their educational and cultural backgrounds within machinery and channels safe providing required fast and efficient services. Libraries services provided by the libraries include the following:</p>
+			<ul>
+				<h3>Main service</h3>
+				<li>Membership service.</li>
+				<li>Circulation service.</li>
+				<li>Shared Library.</li>
+				<li>Advisory Visits service.</li>
+				<h3>Supplementary services</h3>
+				<li>Reference services</li>
+				<li>Guided tours</li>
+				<li>Membership and circulation services.</li>
+				<li>Self check.</li>
+				<li>On-line Catalog.</li>
+				<li>Book reserve service.</li>
+				<li>Internet service.</li>
+				<li>Current awareness service.</li>
+				<li>Electronic library.</li>
+				<li>Sharing Library.</li>
+				<li>Documents coping service.</li>
+				<li>Printing and typing service.</li>
+				<li>Scanner service.</li>
+				<li>Request of library materials.</li>
+				<li>Special services for people with special needs.</li>
+			</ul>
+		</div>
+		
+<!--		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" class="pub-list">
+			<h4>Libraries Opening Times</h4>
+			<p>Libraries open to the public throughout days of the week except Friday Holidays as follows:</p>
+			<ul>
+				<li>From: 9:00 am to 2:00 in the afternoon.</li>
+				<li>From 4:00 pm to 9:00 pm.</li>
+			</ul>
+		</div>
+		
+		<div data-role="collapsible" data-theme="c" data-content-theme="d" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" class="pub-list">
+			<h4>Contact Us</h4>
+			<p>Ministry of Culture, Youth and Community Development – Libraries Department</p>
+			<p>Tel: <a href="tel:+9712 4466145">+9712 4466145</a></p>
+			<p>Fax: +9712 4435628</p>
+			<p>P.O. Box 17 Abu Dhabi - UAE</p>
+			<p><a href="http://www.libraries.gov.ae">www.libraries.gov.ae</a></p>
+			<p>E-mail: <a href="mailto:libraries@mcycd.gov.ae">libraries@mcycd.gov.ae</a></p>
+		</div>-->
+		
+		<a href="#photogallery" data-role="button" class="cutm-btn" id="btn_photo_gallery">Photo Gallery</a>
+		
+	</div><!-- content ends -->
+	
+<!--	<div data-role="footer" data-position="fixed" class="log-footer"><!-- footer starts -->
+<!--	</div><!-- footer ends -->
+</div><!-- aboutPublicLIB page ends -->
+
+
+<div data-role="page" id="photogallery"  class="gallery-page">
+	<div data-role="content" class="no-pad-content"><!-- content starts -->
+	
+	</div>
+	<div style="position:relative; margin:0 auto;">
+		<script type="text/javascript" language="javascript" 
+		src="http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=04b71f2f2bf230c0039fe17b5490a4a4&photoset_id=72157622792816403&format=json&extras=original_format">
+		</script> 
+	</div>	
+</div>
+
+
+<div data-role="page" id="eResourcesPage" class="page-form-bg"><!-- eResourcesPage page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#libLandingPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>e-Resources</h3>
+		</div>
+		
+		<a href="#comingSOonPage" data-role="button" class="cutm-btn">All publisher databases search portals</a>
+		<a href="#comingSOonPage" data-role="button" class="cutm-btn">Off-Campus authentication based on Ezproxy integration</a>
+	</div><!-- content ends -->
+</div><!-- eResourcesPage page ends -->
+
+
+<div data-role="page" id="comingSOonPage" class="page-form-bg"><!-- eResourcesPage page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#" data-rel="back" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<div class="coming-soon">Coming Soon...</div>
+		</div>
+		
+	</div><!-- content ends -->
+</div><!-- eResourcesPage page ends -->
+
+
+
+<div data-role="page" id="eParticipationPage" class="page-form-bg"><!-- Feedback page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#libLandingPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>e-Participation</h3>
+		</div>
+		<h4>Social media</h4>
+		<a href="" data-role="button" class="cutm-btn" id="btnFacebook">Facebook</a>
+		<a href="" data-role="button" class="cutm-btn" id="btnTwitter">Twitter</a>
+		<a href="" data-role="button" class="cutm-btn cutm-btn-do" id="btnYoutube">Youtube</a>
+		
+		<a href="#eParticipationSurveyPage" data-role="button" class="cutm-btn">Survey</a>
+		<a href="#eParticipationFeedbackPage" data-role="button" class="cutm-btn">Feedback</a>
+		
+	</div><!-- content ends -->
+</div><!-- Feedback page ends -->
+
+
+<div data-role="page" id="eParticipationSurveyPage" class="page-form-bg"><!-- eParticipationSurveyPage page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#eParticipationPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>Survey</h3>
+		</div>
+		<form >
+		<label for="text-3">Name:</label>
+		<input data-clear-btn="true" data-mini="true" name="txtSurveyName" id="text-3" value="" placeholder="Full Name" type="text">
+		<label for="textarea-4">Message:</label>
+		<textarea data-clear-btn="true" data-mini="true" cols="40" rows="8" name="txtMessage" id="textarea-4" value="" placeholder="Your Message" type="text"></textarea>
+		<a href="" data-role="button" class="cutm-btn-up cutm-btn" type="submit" id="btnSurveySubmit">Submit</a>
+		</form>
+	</div><!-- content ends -->
+</div><!-- eParticipationSurveyPage page ends -->
+
+
+<div data-role="page" id="eParticipationFeedbackPage" class="page-form-bg"><!-- Feedback page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#eParticipationPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>Feedback</h3>
+		</div>
+		<form >
+		<label for="text-3">Name:</label>
+		<input data-clear-btn="true" data-mini="true" name="txtFeedbackName" id="text-3" value="" placeholder="Full Name" type="text">
+		<label for="textarea-4">Feedback:</label>
+		<textarea data-clear-btn="true" data-mini="true" cols="40" rows="8" name="txtFeedback" id="textarea-4" value="" placeholder="Your Feedback" type="text"></textarea>
+		<a href="" data-role="button" class="cutm-btn-up cutm-btn" id="btnFeedbackSubmit">Submit</a>
+		</form>
+	</div><!-- content ends -->
+</div><!-- Feedback page ends -->
+
+
+<div data-role="page" id="libraryServicesPage" class="page-form-bg"><!-- libraryServices page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#libLandingPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>Library Services</h3>
+		</div>
+		
+		<a href="#advisoryVisitsPage" data-role="button" class="cutm-btn">Advisory Visits</a>
+		<a href="#bookingLibraryToursPage" data-role="button" class="cutm-btn">Booking Library Tours</a>
+		<a href="#comingSOonPage" data-role="button" class="cutm-btn">New books List Book of the month/ week</a>
+		
+	</div><!-- content ends -->
+</div><!-- libraryServices page ends -->
+
+
+<div data-role="page" id="advisoryVisitsPage" class="page-form-bg"><!-- advisoryVisitsPage page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#" data-rel="back" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>Advisory Visits Form</h3>
+		</div>
+		<h4>Institution Data</h4>
+		<form >
+			<label for="date-1">Date:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtDate" id="date-1" value="" placeholder="" type="date">
+			<label for="text-3">Institution Name:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtInstutionName" id="text-3" value="" placeholder="" type="text">
+			<label for="text-3">Library Cheif Authority:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtLibChief" id="text-3" value="" placeholder="" type="text">
+			<label for="tel-2">Telephone:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtTelephone" id="tel-2" value="" type="tel">
+			<label for="tel-3">Fax:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtFax" id="tel-3" value="" type="tel">
+			<label for="email-2">E-mail:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtEmail" id="email-2" value="" placeholder="email@example.com" type="email">
+			
+		<h4>Libraries Data</h4>
+		
+			<label for="text-4">Location:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtLocation" id="text-4" value="" placeholder="" type="text">
+			<label for="textarea-4">Reasons for requesting:</label>
+			<textarea data-clear-btn="true" data-mini="true" cols="40" rows="8" name="txtReason" id="textarea-4" value="" placeholder="" type="text"></textarea>
+			
+		<a href="" data-role="button" class="cutm-btn-up cutm-btn" id="btnadvisoryFormSubmit">Submit</a>
+		</form>
+	</div><!-- content ends -->
+</div><!-- advisoryVisitsPage page ends -->
+
+
+<div data-role="page" id="bookingLibraryToursPage" class="page-form-bg"><!-- bookingLibraryToursPage page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#" data-rel="back" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>Booking Library Tours Form</h3>
+		</div>
+		<form >
+			<label for="date-1">Date:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtTourDate" id="date-1" value="" placeholder="" type="date">
+			<label for="text-3">Name Institution:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtInstitute" id="text-3" value="" placeholder="" type="text">
+			<label for="select-choice-1" class="select">Institution category:</label>
+			<select name="dpdInstutionCategory" id="select-choice-1">
+				<option value="">Option 1</option>
+				<option value="">Option 2</option>
+			</select>
+			<label for="text-3">Group booking category:</label>
+			<input data-clear-btn="true" data-mini="true" name="text-3" id="text-3" value="" placeholder="" type="text">
+			<label for="dpdLanguage[]" class="select">Choose the language of your tour:</label>
+			<select name="select-choice-2" id="select-choice-2" >
+				<option value="">Option 1</option>
+				<option value="">Option 2</option>
+			</select>
+			<label for="text-3">Contact name (of person booking):</label>
+			<input data-clear-btn="true" data-mini="true" name="txtContactName" id="text-3" value="" placeholder="" type="text">
+			<label for="email-2">Email (of person booking):</label>
+			<input data-clear-btn="true" data-mini="true" name="txtInstituteEmail" id="email-2" value="" placeholder="email@example.com" type="email">
+			<label for="text-3">Contact name of:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtContactNameOf" id="text-3" value="" placeholder="" type="text">
+			<label for="tel-2">Contact mobile number:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtMobileNumber" id="tel-2" value="" type="tel">
+			<label for="select-choice-3" class="select">Proposed MCYCD library to visit:</label>
+			<select name="dpdPropesedLibrary" id="select-choice-3" >
+				<option value="">Option 1</option>
+				<option value="">Option 2</option>
+			</select>
+			<label for="date-2">Proposed date of visit:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtDateOfVisit" id="date-2" value="" placeholder="" type="date">
+			<label for="time-2">Proposed time of visit:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtTimeVisit" id="time-2" value="" type="time">
+			<label for="number-2">Group Size:</label>
+			<input data-clear-btn="true" data-mini="true" name="txtGroupSize" id="number-2" value="" type="number">
+			<a href="" data-role="button" class="cutm-btn-up cutm-btn" id="btnTourFormSubmit">Submit</a>
+		</form>
+		
+	</div><!-- content ends -->
+</div><!-- bookingLibraryTours page ends -->
+
+
+
+
+
+<div data-role="page" id="listOFLibrariesPage" class="page-form-bg"><!-- List of libraries page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#libraryLocatorPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="list-of-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<h3>List Of Public Libraries</h3>
+		</div>
+		
+		<ul data-role="listview" data-inset="true" class="list-lib" id="addresslist">
+			<li class="list-items" data-icon="false">
+				<h4 class="text-center">Telephone: 800552255</h4>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_0">
+				<h5 class="list-head text-center">Public Library - Abu Dhabi</h5>
+				<p>Fax: +9712 4457330</p>
+				<p>Email: <a href="mailto:adlibrary@mcycd.gov.ae">adlibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_1">
+				<h5 class="list-head text-center">Public Library - Umm Alquawain</h5>
+				<p>Fax: +9716 7640076</p>
+				<p>Email: <a href="mailto:uqlibrary@mcycd.gov.ae">uqlibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_2">
+				<h5 class="list-head text-center">Public Library - Dibba Fujairah</h5>
+				<p>Fax: +9719 2441824</p>
+				<p>Email: <a href="mailto:debafujlibrary@mcycd.gov.ae">debafujlibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_3">
+				<h5 class="list-head text-center">Public Library - Delma</h5>
+				<p>Fax: +9712 8781055</p>
+				<p>Email: <a href="mailto:dalmalibrary@mcycd.gov.ae">dalmalibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_4">
+				<h5 class="list-head text-center">Public Library - Ras Alkhaimah</h5>
+				<p>Fax: +9717 2276104</p>
+				<p>Email: <a href="mailto:raklibrary@mcycd.gov.ae">raklibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_5">
+				<h5 class="list-head text-center">Public Library - Fujairah</h5>
+				<p>Fax: +9719 2227535</p>
+				<p>Email: <a href="mailto:fujlibrary@mcycd.gov.ae">fujlibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_6">
+				<h5 class="list-head text-center">Public Library - Madint Zayed</h5>
+				<p>Fax: +9712 8841983</p>
+				<p>Email: <a href="mailto:mzlibrary@mcycd.gov.ae">mzlibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_7">
+				<h5 class="list-head text-center">Public Library - Massafi</h5>
+				<p>Fax: +9719 2563142</p>
+				<p>Email: <a href="mailto:masafilibrary@mcycd.gov.ae">masafilibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_8">
+				<h5 class="list-head text-center">Public Library - Ajman</h5>
+				<p>Fax: +9716 7317774</p>
+				<p>Email: <a href="mailto:ajmlibrary@mcycd.gov.ae">ajmlibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+			<li class="list-items" data-icon="false" id="addlist_9">
+				<h5 class="list-head text-center">Public Library - Masfout</h5>
+				<p>Fax: +9712 4435628</p>
+				<p>Email: <a href="mailto:masfllibrary@mcycd.gov.ae">masfllibrary@mcycd.gov.ae</a></p>
+				<div align="center">
+					<a href="#" data-role="button" class="locate-us">Locate us</a>
+				</div>
+			</li>
+		</ul>
+
+	</div><!-- content ends -->
+</div><!-- List of libraries page ends -->
+
+
+<div data-role="page" id="locateUsPage" class="page-form-bg"><!-- Feedback page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#listOFLibrariesPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div id="map_canvas" style="height:25em"></div>
+	</div><!-- content ends -->
+</div><!-- Feedback page ends -->
+
+
+
+
+</body>
+</html>
