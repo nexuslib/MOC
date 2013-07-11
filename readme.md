@@ -1,1 +1,0 @@
-MCYCD Mobile app.
