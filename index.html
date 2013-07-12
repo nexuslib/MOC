@@ -5,30 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Library</title>
 	
-	<script src="js/jquery.js"></script>
-		<script>
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/libs/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/libs/klass.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/libs/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/libs/flickr-gallery-ps.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/photoswipe.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/custom.js"></script>
+	<script type="text/javascript" charset="utf-8" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	
+	<link rel="stylesheet" href="assets/css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="assets/css/theme.css" />
+	<link rel="stylesheet" href="assets/css/styles.css" />
+	<link rel="stylesheet" href="assets/css/photoswipe.css" />
+	
+	<script>
 	$(document).bind("mobileinit", function(){
 		$.mobile.defaultPageTransition= 'none';
-
 	});
-	
 	</script>
-	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
-	<link href="css/theme.css" rel="stylesheet" type="text/css">
-	
-	<link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="css/photoswipe.css" />
-	
-	<script type="text/javascript" src="js/libs/klass.min.js"></script>
-	<script type="text/javascript" src="js/libs/code.photoswipe.jquery-3.0.5.min.js"></script>
-	<script type="text/javascript" src="js/libs/flickr-gallery-ps.js"></script>
-	<script type="text/javascript" charset="utf-8" src="js/libs/cordova-2.7.0.js"></script>
-	<script type="text/javascript" src="js/photoswipe.js"></script>
-	
-	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
-	
 	
 	<script>
 		function checkNet(){
@@ -47,12 +43,12 @@
 	
 	<div data-role="content"><!-- content starts -->
 		<div class="ui-body text-center first-page">
-			<img src="images/logo.png" height="140"/>
+			<img src="assets/images/logo.png" height="140"/>
 			<h3>United Arab Emirates Ministry of Culture, Youth &amp; Community Development</h3>
 		</div>
 		<div align="center">
 			<a href="#libLandingPage" data-role="button" class="cutm-btn-do golden-btn">English</a>
-			<a href="ar/index.html" rel="external" data-role="button" class="cutm-btn-do golden-btn">العربية</a>
+			<a href="index-ar.html" rel="external" data-role="button" class="cutm-btn-do golden-btn">العربية</a>
 		</div>
 	</div><!-- content ends -->
 </div><!-- library page ends -->
@@ -62,7 +58,7 @@
 	
 	<div data-role="content" class="no-pad-content"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 		</div>
 		
 		<div class="ui-grid-a landing-pg-grid">
@@ -251,7 +247,7 @@
 	
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>e-Resources</h3>
 		</div>
 		
@@ -268,7 +264,7 @@
 	
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<div class="coming-soon">
 			<iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=axosoft.com_4esqbt5hl4jgu3mh2gtnh2rs50%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style=" border-width:0 " width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 			<!--Start of Zopim Live Chat Script-->
@@ -295,7 +291,7 @@
 	
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<div class="coming-soon">
 			<!--
 			<iframe src="chat.html" style=" border-width:0 " width="400%" height="420" frameborder="0" scrolling="no"></iframe>
@@ -324,7 +320,7 @@
 	
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>e-Participation</h3>
 		</div>
 		<h4>Social media</h4>
@@ -346,7 +342,7 @@
 	
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>Survey</h3>
 		</div>
 		<form >
@@ -367,7 +363,7 @@
 	
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>Feedback</h3>
 		</div>
 		<form >
@@ -388,7 +384,7 @@
 	
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>Library Services</h3>
 		</div>
 		
@@ -407,7 +403,7 @@
 	
 	<div data-role="content"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>Advisory Visits Form</h3>
 		</div>
 		<h4>Institution Data</h4>
@@ -445,7 +441,7 @@
 	
 	<div data-role="content"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>Booking Library Tours Form</h3>
 		</div>
 		<form >
@@ -501,7 +497,7 @@
 	
 	<div data-role="content" class="list-of-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
-			<img src="images/headr.jpg" width="300" height="71"/>
+			<img src="assets/images/headr.jpg" width="300" height="71"/>
 			<h3>List Of Public Libraries</h3>
 		</div>
 		
