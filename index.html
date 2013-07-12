@@ -29,6 +29,15 @@
 	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	
+	
+	<script>
+		function checkNet(){
+			var status = navigator.onLine ? 'online' : 'No Network Connectivity';
+			if(status === 'No Network Connectivity'){
+				alert(status);    
+			}
+		}
+	</script>
 </head>
 <body>
 <div id="screenMask"></div>
@@ -73,8 +82,8 @@
 			<div class="ui-block-b" align="center"><a href="#listOFLibrariesPage"><div class="libary-locator-img">&nbsp;</div></a></div>
 		</div>
 		<div class="ui-grid-a landing-pg-grid">
-			<div class="ui-block-a" align="center"><a href="#comingSOonPage"><div class="ask-librarian-img">&nbsp;</div></a></div>
-			<div class="ui-block-b" align="center"><a href="#comingSOonPage"><div class="event-cal-img">&nbsp;</div></a></div>
+			<div class="ui-block-a" align="center"><a href="#comingSOonPage"><div class="ask-librarian-img" onClick="checkNet();">&nbsp;</div></a></div>
+			<div class="ui-block-b" align="center"><a href="#events"><div class="event-cal-img">&nbsp;</div></a></div>
 		</div>
 	</div><!-- content ends -->
 	
@@ -252,6 +261,33 @@
 </div><!-- eResourcesPage page ends -->
 
 
+<div data-role="page" id="events" class="page-form-bg"><!-- eResourcesPage page starts -->
+	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
+		<a href="#" data-rel="back" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends -->
+	
+	<div data-role="content" class="booking-lib-page"><!-- content starts -->
+		<div class="logo-banner text-center">
+			<img src="images/headr.jpg" width="300" height="71"/>
+			<div class="coming-soon">
+			<iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=axosoft.com_4esqbt5hl4jgu3mh2gtnh2rs50%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style=" border-width:0 " width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+			<!--Start of Zopim Live Chat Script-->
+			
+			
+			<!--End of Zopim Live Chat Script-->
+			<!--
+			<iframe id='cv_if5' src='http://cdn.instantcal.com/cvir.html?id=cv_nav5&id=cv_nav6&id=cv_nav7&theme=XGY&theme=XGY&theme=XGY&file=http://www.instantcal.com/isc/test_cals/list1a.ics&file=http://www.instantcal.com/isc/test_cals/list1b.ics&file=http://www.instantcal.com/isc/test_cals/list1c.ics&ccolor=ddddff&ccolor=ddeeff&ccolor=ffffcc&cname=Multiview%20Calendar&gtype=cv_monthgrid&gtype=cv_daygrid&gtype=cv_simplelist&gcloseable=0&gcloseable=0&gcloseable=0&gnavigable=1&gnavigable=1&gnavigable=1&gperiod=month&gperiod=day&gperiod=month' scrolling='no' frameborder=0 height=400 width=300></iframe>
+			<iframe src="https://www.google.com/calendar/embed?src=axosoft.com_4esqbt5hl4jgu3mh2gtnh2rs50%40group.calendar.google.com&ctz=Asia/Calcutta" style="border: 0" width="100%" height="350" frameborder="0" scrolling="no"></iframe>
+			
+			<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=axosoft.com_4esqbt5hl4jgu3mh2gtnh2rs50%40group.calendar.google.com&amp;color=%23333333&amp;src=axosoft.com_q01g42at9ehsr708esmv88qfs4%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FLos_Angeles" width="100%" height="350" frameborder="0" scrolling="no">chat is offline</iframe>
+			-->
+			</div>
+		</div>
+		
+	</div><!-- content ends -->
+</div><!-- eResourcesPage page ends -->
+
+
 <div data-role="page" id="comingSOonPage" class="page-form-bg"><!-- eResourcesPage page starts -->
 	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
 		<a href="#" data-rel="back" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
@@ -260,7 +296,20 @@
 	<div data-role="content" class="booking-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">
 			<img src="images/headr.jpg" width="300" height="71"/>
-			<div class="coming-soon">Coming Soon...</div>
+			<div class="coming-soon">
+			<!--
+			<iframe src="chat.html" style=" border-width:0 " width="400%" height="420" frameborder="0" scrolling="no"></iframe>
+			-->
+			<script type="text/javascript">
+			window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+			d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+			_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+			$.src='//v2.zopim.com/?1Mukpfhw1GJZeJRytXnynKnCo0wfxEjB';z.t=+new Date;$.
+			type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+			</script>
+			
+			</div>
+			
 		</div>
 		
 	</div><!-- content ends -->
@@ -447,8 +496,8 @@
 
 <div data-role="page" id="listOFLibrariesPage" class="page-form-bg"><!-- List of libraries page starts -->
 	<div data-role="header" class="header-bg" data-position="fixed"><!-- header starts -->
-		<a href="#libraryLocatorPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
-	</div><!-- header ends -->
+		<a href="#listOFLibrariesPage" data-iconpos="notext" data-icon="back" data-shadow="true" data-iconshadow="true" data-theme="c">&nbsp;</a>
+	</div><!-- header ends #libLandingPage -->
 	
 	<div data-role="content" class="list-of-lib-page"><!-- content starts -->
 		<div class="logo-banner text-center">

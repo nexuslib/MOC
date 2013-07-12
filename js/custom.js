@@ -209,6 +209,7 @@
 			states[Connection.CELL]     = 'Cell generic connection';
 			states[Connection.NONE]     = 'No network connection';
 			
+			alert(networkState);
       
        
 	   if( states[networkState] == states[Connection.NONE])
